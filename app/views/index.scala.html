@@ -1,0 +1,23 @@
+@main(null) {
+    
+    <div class="greeting"></div>
+    <button class="send">Send</button>
+    
+    <script type="text/javascript" charset="utf-8">
+    
+        $(function() {
+            var WS = window['MozWebSocket'] ? MozWebSocket : WebSocket
+	        var sock = new WS("@routes.Application.greetWriter().webSocketURL(request)")
+            
+            sock.onmessage = function(event) {
+				$('.greeting').append(event.data)
+            }
+            
+            $('button.send').click(function() {
+    			sock.send("I'm sending a message now.")
+  			});
+        })
+    
+    </script>
+
+}
