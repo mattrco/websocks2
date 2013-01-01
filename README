@@ -2,6 +2,10 @@ Sample project demonstrating websockets in Play 2.0.
 
 Based on https://github.com/playframework/Play20/tree/master/samples/java/websocket-chat
 
+Read the blog post about it here:
+
+http://blueprintforge.com/blog/2012/02/13/websockets-in-play-2-dot-0/
+
 Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
